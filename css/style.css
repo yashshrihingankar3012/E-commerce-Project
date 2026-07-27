@@ -1,1 +1,120 @@
+.bg-custom{
+	background-color: #0696ba;
+}
+.nav-link, .navbar-brand{
+	color: white;
+}
+.navbar-brand img {
+	width: 30px;
+}
 
+
+.jumbotron {
+	height: 80vh;
+	color: white;
+	clip-path: polygon(50% 0%, 100% 0, 100% 100%, 30% 89%, 0 100%, 0% 60%, 0 0);
+}
+
+#changetext::after{
+	content: "";
+	animation-name: changetextanimation;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes changetextanimation {
+
+	25%{
+		content: "Watches";
+		color: red;
+	}
+	50%{
+		content: "Smart Phones";
+		color: orange;
+	}
+	75%{
+		content: "WebCam";
+		color: yellow;
+	}
+	100%{
+		content:"Shirts and Pants";
+		color: lightgreen;
+	}
+}
+
+.modal input {
+	margin-bottom: 20px;
+}
+
+#rating img {
+    width: 60px;
+    }
+  .card-footer {
+  	background-color:#0696ba;
+  	color:white;
+  	font-family: "Caveat", serif;
+}
+
+  #rating i,#product i {
+  	color:orange;
+  }
+
+  #rating h1, #product h1, #ecommerce h1, #slider h1{
+	text-align: center;
+	font-family: lucida;
+
+}
+#rating span, #product span, #ecommerce span, #slider span{
+	color: #0696ba;
+}
+#product #addicon img{
+	width:30px ;
+	float: right;
+}
+#product #price{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+#product .card{
+	border-radius: 20px;
+
+}
+#product #overlay {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+
+}
+#overlay img{
+	background-color: orange;
+	width: 40px;
+	 padding: 5px;
+	 cursor: pointer;
+	 margin-top: 10px;
+}
+#overlay{
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+.card:hover #overlay{
+	opacity: 1;
+}
+#ecommerce h1{
+	top-margin:10px;
+}
+#carousel img{
+	width: 2px;
+}
+#slider{
+	background: linear-gradient();
+}
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
